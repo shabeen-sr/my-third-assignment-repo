@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <title>Products Shop</title>
+    <!--Daisy UI $ Tailwind CDN-->
+    
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!--Fontawesome CDN-->
 
     <script src="https://kit.fontawesome.com/5887f8f36d.js" crossorigin="anonymous"></script>
+
+    
 </head>
 <body>
     <header>
@@ -50,12 +54,12 @@
         <section class="py-10">
             <!--Text Section-->
             <div>
-                <h1 class="text-5xl font-bold text-center">Freshness <span class="text-green-600">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+                <h1 class="text-5xl font-bold text-center text-[32px] lg:text-[54px] lg:mx-[300px]">Freshness <span class="text-green-600">You Can <br> Count</span> On, Prices You’ll Love!</h1>
                 <br>
-                <p class="text-gray-500 text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>    
+                <p class="text-center font-[350] text-[18px] px-4 lg:mx-[300px]  text-gray-500 ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>    
             </div>
             <!--Image Section-->
-            <div class="place-items-center md:h-125 w-100">
+            <div class="place-items-center md:h-125 w-100 animate-bounce">
                 <img src="assets/hero-vegetables.png" alt="">
             </div>
         </section>
@@ -64,19 +68,16 @@
     <!--Main Section Start-->
 
     <main>
-        <section>
-            <!--Services Section-->
-
+        <!--Services Section-->
+        <section class="my-10 flex flex-col gap-6 mx-6 lg:mx-[150px]">
             <h3 class="text-5xl lg:text-3xl font-bold text-green-600 py-4 pl-5 ">Services</h3>
             <div class="grid grid-cols-1 px-4 lg:grid-cols-3 justify-items-center gap-10">
-                <!--Card 1-->
+
+            <!--Card 1-->
             <div class="card bg-green-300 shadow-xl">
                 <div class="avatar mx-auto pt-6">
-                    <div class="w-32 rounded-full bg-white">
-                        <figure class="w-24 mx-auto pt-4" >
-                            <img src="assets/service.png" alt="">
-                        </figure>
-                      
+                    <div class="mx-auto bg-white rounded-full p-4">
+                         <img src="assets/service.png" alt="">
                     </div>
                   </div>
                 <div class="card-body items-center">
@@ -88,11 +89,8 @@
             <!--Card 2-->
             <div class="card bg-green-300 shadow-xl">
                 <div class="avatar mx-auto pt-6">
-                    <div class="w-32 rounded-full bg-white">
-                        <figure class="w-24 mx-auto pt-4" >
-                            <img src="assets/delivery.png" alt="">
-                        </figure>
-                      
+                    <div class="mx-auto bg-white rounded-full p-4">
+                          <img src="assets/delivery.png" alt="">     
                     </div>
                   </div>
                 <div class="card-body items-center">
@@ -104,11 +102,8 @@
             <!--Card 3-->
             <div class="card bg-green-300 shadow-xl">
                 <div class="avatar mx-auto pt-6">
-                    <div class="w-32 rounded-full bg-white">
-                        <figure class="w-24 mx-auto pt-4" >
+                    <div class="mx-auto bg-white rounded-full p-4">
                             <img src="assets/healthy.png" alt="">
-                        </figure>
-                      
                     </div>
                   </div>
                 <div class="card-body items-center">
@@ -118,6 +113,44 @@
             </div>
             </div>   
         </section>
+
+        <!--Arrival & Offers-->
+        <section class="flex flex-col gap-6 mx-7 pl-5 lg:mx-[150px]">
+            <h1 class="text-5xl lg:text-3xl font-bold text-green-600 py-4 ">Popular Products</h1>
+            <!--Cards-->
+            <div class="flex flex-col lg:flex-row items-center gap-6">
+                <!--1st Card-->
+                <div class="bg-green-950 w-full h-full p-4 rounded-[10px] flex justify-between lg:flex-[2] ">
+                    <div class="flex flex-col justify-around">
+                        <div>
+                            <img src="assets/dawat-logo.png" alt="">
+                        </div>
+                        <button class="bg-[#62b76f] hover:bg-green-700 text-white p-4 rounded-[10px] mt-4">Cook Exotic Dishes</button>
+                        <h4 class=" text-white text-3xl">UP to <span class="font-bold text-3xl">20% OFF</span></h4>
+                    </div>
+                    <div class="relative -right-10 top-4">
+                        <img src="assets/dawat-mock-up.png" alt="">
+                    </div>
+                </div>
+                <!--2nd Card-->
+                <div
+                    class="bg-blue-800 w-full overflow-y-hidden h-[343px] p-4 rounded-[10px] flex justify-between items-center lg:flex-1 ">
+                    <div class="flex flex-col justify-around">
+                        <div>
+                            <img class="" src="assets/india-gate-logo.png" alt="">
+                        </div>
+                        <button class="bg-blue-500 hover:bg-blue-300 text-white p-4 rounded-[10px] mt-4">World’s No.1 Rice</button>
+                        <h4 class="text-white text-3xl">UP to <span class="font-bold text-3xl">40% OFF</span></h4>
+                    </div>
+                    <div class="relative top-14 left-3">
+                        <img src="assets/india-gate-mock-up.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    
+        
     </main>
 
 </body>
